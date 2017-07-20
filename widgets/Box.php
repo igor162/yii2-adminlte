@@ -120,10 +120,14 @@ class Box extends Widget {
 
     protected function renderFooter()
     {
-        if ($this->footer) {
-            return Html::tag("div", $this->footer, ["class" => "box-footer"]);
+        if (empty($this->footer)){ return ''; }
+
+        if (is_array($this->footer))
+        {
+            $this->footer = implode(" ", $this->footer);
         }
-        return '';
+
+        return Html::tag("div", $this->footer, ["class" => "box-footer"]);
     }
 
     protected function collapse()

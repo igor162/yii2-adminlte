@@ -16,11 +16,12 @@ Custom Values:
 ```
 <!-- Box -->
 Box::begin([
-    'type' => 'primary',
+    'type' => Box::TYPE_SUCCESS,
     'title' => 'Box title',
     'refreshUrl' => '/userinfo',
     'tools' => ['refresh', 'collapse', 'remove'],
-    'collapsed' => false
+    'collapsed' => false,
+    'footer' => $array_button,
 ]);
 
 echo "cszchen/alte";
