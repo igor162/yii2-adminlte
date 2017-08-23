@@ -99,7 +99,7 @@ class Box extends Widget {
             if (in_array($v, $this->sysTools)) {
                 $tools .= $this->$v();
             } else {
-                $tools .= $v;
+                $tools .= $v . "\n";
             }
         }
         if (!$this->title && !$tools) {
