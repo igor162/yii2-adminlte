@@ -98,9 +98,11 @@ class SidebarMenu extends \yii\widgets\Menu
         $small = is_array($small) ? $small : ['label' => $small];
         $color = isset($small['color']) ? $small['color'] : "label-danger";
         $class = isset($small['class']) ? $small['class'] : "label pull-right";
-        $class = $class.' '.$color;
+        $title = isset($small['title']) ? ["title" => $small['title']] : [];
+        $class = ["class" => $class.' '.$color];
+        $style = $class + $title;
 
-        return Html::tag("small", ArrayHelper::remove($small, 'label'), ["class" => $class]);
+        return Html::tag("small", ArrayHelper::remove($small, 'label'), $style);
     }
 
     /**
