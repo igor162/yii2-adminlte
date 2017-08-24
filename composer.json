@@ -14,9 +14,7 @@
         "yiisoft/yii2": "2.*",
         "yiisoft/yii2-bootstrap": "2.*",
         "cebe/yii2-gravatar": "1.*",
-        "igor162/yii2-adminlte-style": "dev-master",
         "rmrevin/yii2-fontawesome": "~2.9",
-        "igor162/yii2-adminlte": "dev-master"
     },
     "autoload": {
         "psr-4": {
