@@ -11,7 +11,7 @@ use igor162\adminlte\ColorCSS;
  */
 class AdminLteAsset extends BaseAdminLteAsset
 {
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    public $sourcePath = '@vendor/igor162/AdminLteStyle/dist';
     public $css = [
         'css/AdminLTE.min.css',
     ];
